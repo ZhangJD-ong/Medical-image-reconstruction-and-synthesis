@@ -8,7 +8,7 @@ Paper Link: https://doi.org/10.1038/s44172-023-00121-z
 ## Introduction:
 This is the PyTorch implementation for low-dose PET reconstruction and PET-CT synthesis.
 
-![Image](https://github.com/ZhangJD-ong/Iterative-Cycle-consistent-Semi-supervised-Learning-for-fibroglandular-tissue-segmentation/blob/main/img/Framework.png)
+![Image](https://github.com/ZhangJD-ong/Medical-image-reconstruction-and-synthesis/tree/main/Img/Framework.png)
 
 ## Requirements:
 * python 3.10
