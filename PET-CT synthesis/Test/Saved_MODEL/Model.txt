@@ -1,0 +1,9 @@
+Put the well-trained model here.
+
+Name:  CTimg_PETimg.pkl   PETimg_CTimg.pkl
+
+You can download the well-trained model via following links:
+
+CTimg_PETimg.pkl:
+
+PETimg_CTimg.pkl:
