@@ -22,42 +22,28 @@ This is the PyTorch implementation for low-dose PET reconstruction and PET-CT sy
 
 ### Dataset
 * Paritial data are released in this project for debugging and testing, including paired low-dose/standard-dose PET images, and paired PET/CT images. 
-* To test the reconstruction and synhtesis models, you need to put the data in ./Test/Data:
+* To test the reconstruction and synhtesis models, you need to put the data in ./data/Datasets/:
 
 ```
-./data
-├─train.txt
+./data/Datasets
 ├─test.txt
-├─w_label
-      ├─Breast_MRI_002
-            ├─Breast.nii.gz
-            ├─P0.nii.gz
-            ├─P1_reg.nii.gz
-            └─Tissue_gt.nii.gz
-
-      ├─Breast_MRI_006
-      ├─Breast_MRI_018
-      ...
-
-└─wo_label
-      ├─Breast_MRI_001
-            ├─Breast.nii.gz
-            ├─P0.nii.gz
-            └─P1_reg.nii.gz
-
-      ├─Breast_MRI_003
-      ├─Breast_MRI_004
+├─1
+  ├─CT.nii.gz
+  └─PET.nii.gz
+├─2
+  ├─CT.nii.gz
+  └─PET.nii.gz
       ...
 ```
-* The format of the train.txt / test.txt is as follow：
+* The format of the test.txt is as follow：
 ```
-./data/train.txt
-├─w-Breast_MRI_002
-├─w-Breast_MRI_006
-├─w-Breast_MRI_018
+./data/test.txt
+├─'1_1'
+├─'1_2'
+├─'1_3'
 ...
-├─wo-Breast_MRI_001
-├─wo-Braest_MRI_003
+├─'1_21'
+├─'2_1'
 ...
 ```
 
