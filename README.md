@@ -25,8 +25,9 @@ This is the PyTorch implementation for low-dose PET reconstruction and PET-CT sy
 * To test the reconstruction and synhtesis models, you need to put the data in ./data/Datasets/:
 
 ```
-./data/Datasets
+./data
 ├─test.txt
+./data/Datasets
 ├─1
   ├─CT.nii.gz
   └─PET.nii.gz
@@ -38,48 +39,27 @@ This is the PyTorch implementation for low-dose PET reconstruction and PET-CT sy
 * The format of the test.txt is as follow：
 ```
 ./data/test.txt
+├─'1_0'
 ├─'1_1'
 ├─'1_2'
-├─'1_3'
 ...
-├─'1_21'
-├─'2_1'
+├─'1_19'
+├─'2_0'
 ...
 ```
 
-### Whole Breast Segmentation Model
-* The whole breast segmentation process is required to locate the breast ROI first.
-* Partial images and whole breast annotations are available at: https://github.com/ZhangJD-ong/AI-assistant-for-breast-tumor-segmentation
+### Well-trained Model
+* The well trained model can be downloaded via: https://drive.google.com/drive/folders/1zwQkCnctDeEh60hnkDDqROaRcRz7ycr8?usp=sharing
+* The well-trained model should be placed in ./Test/Saved_MODEL
 
-### Tumor Segmentation Model
-* The tumor segmentation process is required to remove tumor enhancement for accurate BPE (Background Parenchymal Enhancement) quantification.
-* A well-designed tumor segmentation assistant is available at: https://github.com/ZhangJD-ong/AI-assistant-for-breast-tumor-segmentation
 
 ## Citation
 If you find the code useful, please consider citing the following papers:
-* Zhang et al., Breast Fibroglandular Tissue Segmentation for Automated BPE Quantification with Iterative Cycle-consistent Semi-supervised Learning, IEEE Transactions on Medical Imaging (2023), https://doi.org/10.1109/TMI.2023.3319646
-* Zhang et al., A robust and efficient AI assistant for breast tumor segmentation from DCE-MRI via a spatial-temporal framework, Patterns (2023), https://doi.org/10.1016/j.patter.2023.100826
-* Zhang et al., Recent advancements in artificial intelligence for breast cancer: Image augmentation, segmentation, diagnosis, and prognosis approaches, Seminars in Cancer Biology (2023), https://doi.org/10.1016/j.semcancer.2023.09.001
+* Zhang et al., A Generalized Dual-Domain Generative Framework with Hierarchical Consistency for Medical Image Reconstruction and Synthesis, Communications Engineering (2023), https://doi.org/10.1038/s44172-023-00121-z
+* Zhang et al., Mapping in Cycles: Dual-Domain PET-CT Synthesis Framework with Cycle-Consistent Constraints, International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2022), https://doi.org/10.1007/978-3-031-16446-0_72
 
 
 
 
 
-
-The code is available at https://drive.google.com/drive/folders/1zwQkCnctDeEh60hnkDDqROaRcRz7ycr8?usp=sharing
-This code is developed for medical image reconstruction and synthesis based on proposed framework.
-We include two tasks in the file, i.e., low-dose PET reconstruction and PET-CT synthesis.
-Small dataset are provided to demo the code.
-
-System requiements:
-We need system intalled Pytorch and ODL package.
-
-Training:
-In each tasak, there are three stage as mentioned in the paper. User needs to train each model seperatively. We also provide our well-trained models.
-
-
-Testing:
-Users need to copy the best model to the '.\Test\Saved_Model', and run test.py to inference. 
-We also provide the well-trained model in the folder.
-User can download our provided data and model. By filling the right path of data, user can get test resutls in '.\Test\Saved_Model' by simply run 'test.py'.
 
