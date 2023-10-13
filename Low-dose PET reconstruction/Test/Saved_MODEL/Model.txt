@@ -1,2 +1,7 @@
 Put the well-trained model here.
-Name: L_S_best_model.pkl
+
+Name: L_S_best_model.pth
+
+You can download the well-trained model via following links:
+
+https://drive.google.com/drive/folders/1zwQkCnctDeEh60hnkDDqROaRcRz7ycr8?usp=sharing
